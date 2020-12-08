@@ -5,7 +5,7 @@ import axios from "axios";
 
 import { API_URL } from "../constants";
 
-class ConfirmRemoval extends Component {
+class ConfirmRemovalModal extends Component {
     state = {
         modal: false
     };

@@ -19,7 +19,7 @@ class NewRoomModal extends Component {
         var title = "Editing Room";
         var button = <Button onClick={this.toggle}>Edit</Button>
         if(create) {
-            tite = "Creating New Room";
+            title = "Creating New Room";
 
             button = (
                 <Button
