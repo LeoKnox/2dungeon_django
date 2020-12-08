@@ -16,6 +16,10 @@ class Home extends Component {
         this.resetState();
     }
 
+    getRooms = () => {
+        axios.get(API_URL).then(res => this.setState({ rooms: res.data }));
+    }
+
     resetState = () => {
         this.getRooms();
     };
