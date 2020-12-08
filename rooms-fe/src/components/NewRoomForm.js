@@ -96,6 +96,8 @@ class NewRoomForm extends React.Component {
                 </FormGroup>
                 <Button>Send</Button>
             </Form>
-        )
+        );
     }
 }
+
+export default NewRoomForm;
