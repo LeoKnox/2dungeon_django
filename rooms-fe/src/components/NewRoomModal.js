@@ -17,7 +17,7 @@ class NewRoomModal extends Component {
         const create = this.props.create;
 
         var title = "Editing Room";
-        var button = <Button onClick={this.toggle}>Edit</Button>
+        var button = <Button onClick={this.toggle}>Edit</Button>;
         if(create) {
             title = "Creating New Room";
 
