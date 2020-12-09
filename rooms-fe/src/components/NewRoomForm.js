@@ -36,7 +36,7 @@ class NewRoomForm extends React.Component {
 
     editRoom = e => {
         e.preventDefault();
-        axios.put(API_URL + this.state.pk, this.state).thend(() => {
+        axios.put(API_URL + this.state.pk, this.state).then(() => {
             this.props.resetState();
             this.props.toggle();
         });
