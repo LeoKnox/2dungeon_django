@@ -45,7 +45,6 @@ class RoomList extends Component {
                                         pk={room.pk}
                                         resetState={this.props.resetState}
                                     />
-                                    {room.pk}
                                 </td>
                             </tr>
                         ))
