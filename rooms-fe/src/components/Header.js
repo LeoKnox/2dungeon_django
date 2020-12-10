@@ -5,9 +5,9 @@ class Header extends Component {
         return (
             <div className = "text-center">
                 <h5>
-                    Dungeon information
+                    Django api + Ract.js : Yeah!
                 </h5>
-                <h1> App with React + DJango</h1>
+                <h1>Dungeon React</h1>
             </div>
         );
     }
