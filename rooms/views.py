@@ -23,7 +23,6 @@ def rooms_list(request):
 
 @api_view(['PUT', 'DELETE'])
 def rooms_detail(request, pk):
-    print(pk)
     try:
         room = Room.objects.get(pk = pk)
     except Room.DoesNotExist:
