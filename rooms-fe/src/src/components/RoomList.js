@@ -16,7 +16,7 @@ class RoomList extends Component {
                         <th>Width</th>
                         <th>Height</th>
                         <th>Floor</th>
-                        <th></th>
+                        <th>Actions</th>
                     </tr>
                 </thead>
                 <tbody>
