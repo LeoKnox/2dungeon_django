@@ -25,8 +25,8 @@ def rooms_list(request):
 def rooms_detail(request, pk):
     try:
         room = Room.objects.get(pk = pk)
-        v = room.doors.get(id = pk)
-        print(v.door_one)
+        v = room.doors.filter(id=1)
+        print(v.id)
     except Room.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
     
