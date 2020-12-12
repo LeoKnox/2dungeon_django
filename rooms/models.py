@@ -6,7 +6,7 @@ class Room(models.Model):
     width = models.IntegerField()
     height = models.IntegerField()
     floor = models.CharField(max_length=5)
-    doors = models.ManyToManyField('Door')
+    doors = models.ManyToManyField('Door', blank=True)
 
     def __str__(self):
         return self.name
@@ -16,4 +16,4 @@ class Door(models.Model):
     door_two = models.IntegerField()
 
     def __str__(self):
-        return self.name
+        return self.door_one
