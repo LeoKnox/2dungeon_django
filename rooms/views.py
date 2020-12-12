@@ -25,6 +25,8 @@ def rooms_list(request):
 def rooms_detail(request, pk):
     try:
         room = Room.objects.get(pk = pk)
+        v = room.doors.all()
+        print(v.name)
     except Room.DoesNotExist:
         return Response(status=status.HTTP_404_NOT_FOUND)
     
